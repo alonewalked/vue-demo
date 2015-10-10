@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Router demo2</title>
+    <style>
+      .v-link-active {
+        background-color: #333;
+		color:#fff
+      }
+	  .sub {
+		font-size: 10px;
+	  }
+    </style>
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>Hello App!</h1>
+      <p>
+        <!-- use v-link directive for navigation. -->
+        <a v-link="{ path: '/home' }">Home</a>
+        <a v-link="{ path: '/cate' }">Cate</a>
+		<a class="sub" v-link="{ path: '/cate/1' }">Cate 1</a>
+		<a class="sub" v-link="{ path: '/cate/2' }">Cate 2</a>
+      </p>
+      <!-- use router-view element as route outlet -->
+      <router-view></router-view>
+    </div>
+
+    <script src="build.js"></script>
+  </body>
+</html>
