@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue lazy img</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>Hello App!</h1>
+      <p>
+        <!-- use v-link directive for navigation. -->
+        <a v-link="{ path: '/home' }">Home</a>
+        <a v-link="{ path: '/cate' }">Cate</a>
+		<a class="sub" v-link="{ path: '/cate/1' }">Cate 1</a>
+		<a class="sub" v-link="{ path: '/cate/2' }">Cate 2</a>
+		
+		<a v-link="{ path: '/search' }">Search</a>
+		<a class="sub" v-link="{ path: '/search?type=1' }">rank 1</a>
+		<a class="sub" v-link="{ path: '/search/test' }">rank 2</a>
+		<a class="sub" v-link="{ path: '/search/a/b' }">rank 3</a>
+      </p>
+      <!-- use router-view element as route outlet -->
+      <router-view></router-view>
+    </div>
+
+    <script src="build.js"></script>
+  </body>
+</html>
