@@ -1,0 +1,8 @@
+<div class="list-group table-of-contents" >
+    <div class="list-group-item" v-repeat="item in images">
+    <lazy-img data-src="{{item.url}}"></lazy-img>
+    <a href="#"><red-dot key="list_{{$index}}" newer="{{todaykey}}" number="{{$index}}"></red-dot></a>
+    </div>
+</div>
+<load-more reddit="{{reddit}}"></load-more>
+<div v-top-box href="#" class="goTop">top</div>
