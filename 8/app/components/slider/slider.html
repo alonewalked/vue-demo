@@ -1,0 +1,11 @@
+<div class="scroll-all swiper-container" v-el:wrapper>
+    <ul class="scroll" v-el:list> 
+    <li class="scroll-list" v-for="item in items">
+        <a class="scroll-link" >
+        <img v-bind:src.once="item.img" width="100%">
+        </a>
+        <a class="down-link"> 下载 </a>
+    </li>
+    </ul>
+</div> 
+<div class="scroll-focus" v-el:pager></div>

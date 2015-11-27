@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Vue slider</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>Hello App!</h1>
+      <p>
+        <!-- use v-link directive for navigation. -->
+        <a v-link="{ path: '/home' }">Home</a>
+       
+      </p>
+      <!-- use router-view element as route outlet -->
+      <router-view></router-view>
+    </div>
+
+    <script src="build.js"></script>
+  </body>
+</html>

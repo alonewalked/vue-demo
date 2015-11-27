@@ -1,0 +1,71 @@
+blockquote,body,button,dd,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,menu,ol,p,pre,select,td,textarea,th,ul {
+	margin: 0;
+	padding: 0
+}
+ol,ul {
+	list-style: none
+}
+.swiper-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden
+}
+
+.swiper-container .scroll {
+	overflow: hidden;
+	height: 135px;
+	width: 500%;
+	display: box;
+	display: -webkit-box
+}
+
+.swiper-container .scroll .scroll-list {
+	position: relative;
+	text-align: center;
+	float: left;
+	height: 135px;
+	box-flex: 1;
+	-webkit-box-flex: 1
+}
+
+.swiper-container .scroll .scroll-link {
+	display: block
+}
+
+.swiper-container .scroll .scroll-link img {
+	width: 100%;
+	height: 135px
+}
+
+.swiper-container .down-link {
+	background-color: #80b042;
+	text-align: center;
+	color: #fff;
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 3px;
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	z-index: 88
+}
+
+.scroll-focus {
+	height: 3px;
+	display: box;
+	display: -webkit-box;
+	background-color: #b9b9b9
+}
+
+.scroll-focus span {
+	display: block;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	height: 3px
+}
+
+.scroll-focus .selected {
+	background-color: #82c600
+}
