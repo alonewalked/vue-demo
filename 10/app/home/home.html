@@ -1,0 +1,34 @@
+<section>
+<div class="mod-box">
+<div class="detail-intr">
+    <div class="intr-title">
+        <h3>描述</h3>
+        <a class="game-icon gc-arrwoUp gc-arrwoDown" v-show-more="{arrCss:'gc-arrwoDown',showCss:'show-all',target:'#gc-intro'}"></a>
+    </div>
+    <div class="intr-detial" id="gc-intro">
+        <div class="intr-app">
+            <p>
+                <span class="intr-left">品名</span>
+                <span class="intr-right">{{data.name}}</span>
+            </p>
+            <p>
+                <span class="intr-left">关键词</span>
+                <span class="intr-right">{{data.keywords}}</span>
+            </p>
+        </div>
+        <div class="intr-info">
+            <span class="intr-left">介绍</span>
+            <span class="intr-right" v-html="data.description"></span>
+        </div>
+        <div class="intr-comp">
+            <span class="intr-left">用料</span>
+            <span class="intr-right">{{data.food}}</span>
+        </div>
+        <div class="intr-dev">
+            <span class="intr-left">关注度</span>
+            <span class="intr-right">{{data.count}}</span>
+        </div>
+    </div>
+</div>
+</div>
+</section>

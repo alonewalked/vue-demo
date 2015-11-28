@@ -1,0 +1,93 @@
+blockquote,body,button,dd,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,menu,ol,p,pre,select,td,textarea,th,ul {
+	margin: 0;
+	padding: 0
+}
+ol,ul {
+	list-style: none
+}
+.game-icon:before {
+    font-size: 1.375rem
+}
+.gc-arrwoUp:before {
+    content: "↑";
+    font-size: 1.375rem
+}
+
+.gc-arrwoDown:before {
+    content: "↓";
+    font-size: 1.375rem
+}
+
+.mod-box {
+    background-color: #fff;
+    margin: 5px;
+    position: relative;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px
+}
+.detail-intr {
+    padding: 10px;
+    position: relative
+}
+
+.detail-intr .intr-title {
+    position: relative;
+    margin-bottom: 10px
+}
+
+.detail-intr .intr-title .game-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    font-size: 1rem
+}
+
+.detail-intr .show-all {
+    max-height: none!important
+}
+
+.detail-intr .intr-detial {
+    width: 100%;
+    font-size: 12px;
+    max-height: 34px;
+    overflow: hidden
+}
+
+.detail-intr .intr-detial .intr-left {
+    text-align: right;
+    color: #979797;
+    margin-right: 5px;
+    width: 36px;
+    display: inline-block
+}
+
+.detail-intr .intr-detial .intr-right {
+    text-align: left;
+    color: #000
+}
+
+.detail-intr .intr-detial div {
+    margin-bottom: 5px
+}
+
+.detail-intr .intr-detial .intr-app {
+    display: table;
+    width: 100%
+}
+
+.detail-intr .intr-detial .intr-app p {
+    display: table-cell;
+    width: 50%
+}
+
+.detail-intr .intr-detial .intr-info .intr-left {
+    vertical-align: top
+}
+
+.detail-intr .intr-detial .intr-info .intr-right {
+    display: inline-block;
+    width: 81%;
+    line-height: 16px
+}
