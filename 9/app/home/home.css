@@ -1,0 +1,36 @@
+blockquote,body,button,dd,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,menu,ol,p,pre,select,td,textarea,th,ul {
+	margin: 0;
+	padding: 0
+}
+ol,ul {
+	list-style: none
+}
+.detail-pic {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0 10px 10px;
+    position: relative;
+    height: 186px;
+    overflow: hidden
+}
+
+.detail-pic .detail-lide {
+    position: absolute;
+    height: 186px;
+    display: box;
+    display: -webkit-box
+}
+
+.detail-pic .detail-lide li {
+    position: relative
+}
+
+.detail-pic .detail-lide li .video-time {
+    right: 10px
+}
+
+.detail-pic .detail-lide img {
+    float: left;
+    width: 106px;
+    height: 186px;
+    margin-right: 10px
+}
