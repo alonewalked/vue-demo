@@ -1,0 +1,42 @@
+<div class="heading">
+  <h1 class="title">2048</h1>
+  <div class="scores-container">
+    <div class="score-container">{{conf.score}}</div>
+    <div class="best-container">{{conf.bestScore}}</div>
+  </div>
+</div>
+
+<div class="above-game">
+  <p class="game-intro">Small Doll<strong>2048!</strong></p>
+  <a class="restart-button" v-on:click="init">New Game</a>
+  <label class='left' for="noTiles">Select the number of tiles</label>
+
+  <select v-on:change="changesTilesSize" v-selected="conf.size">
+    <option value="4">4 tiles</option>
+    <!--<option value="5">5 tiles</option>
+    <option value="6">6 tiles</option>-->
+  </select>
+</div>
+
+<div class="game-container" v-bind:style="{width:findDimention+'px',height:findDimention+'px'}">
+  <div class="game-message">
+    <p></p>
+    <div class="lower">
+        <a class="keep-playing-button" @click=" clearMessage">Keep going</a>
+      <a class="retry-button" @click="init">Try again</a>
+    </div>
+  </div>
+
+  <div class="grid-container">
+     <!-- Grid Here -->
+        <div v-for="gxs in grid" track-by="$index"  class="grid-row">
+            <div v-for="item in gxs" track-by="$index" class="grid-cell"></div>
+        </div>
+  </div>
+
+  <div class="tile-container" id="tile-container"> 
+        <!-- Component way with computed function -->
+        <v-tile v-bind:tile.sync="item" v-for="item in tiles" > 
+        </v-tile> 
+  </div> 
+</div>   
