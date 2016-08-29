@@ -1,0 +1,28 @@
+<header class="header">
+    <h1>todos</h1>
+    <input class="new-todo"
+        autofocus autocomplete="off"
+        placeholder="What needs to be done?"
+        v-model="newTodo"
+        @keyup.enter="addTodo">
+</header>
+<section class="main" v-if="todolist.length" >
+    <input class="toggle-all" type="checkbox" >
+    <ul class="todo-list">
+        <li class="todo"
+            v-for="todo in todolist"
+            :class="{completed: todo.completed, editing: todo == editedTodo}" v-if="todo" track-by="$index">
+            <div class="view">
+                <input class="toggle" type="checkbox" v-model="todo.completed" @click="completeChanged($index,todo)" >
+                <label @dblclick="editTodo($index,todo)">{{todo.title}}</label>
+                <button class="destroy" @click="removeTodo($index,todo)"></button>
+            </div>
+            <input class="edit" type="text"
+                v-model="todo.title"
+                v-todo-focus="todo == editedTodo"
+                @blur="doneEdit($index,todo)"
+                @keyup.enter="doneEdit($index,todo)"
+                @keyup.esc="cancelEdit($index,todo)">
+        </li>
+    </ul>
+</section>

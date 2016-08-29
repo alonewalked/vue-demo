@@ -1,0 +1,33 @@
+{
+  "name": "vue-webpack-server",
+  "version": "1.0.0",
+  "description": "vue webpack server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --port 9090 --inline"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.1.2",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.2",
+    "babel-runtime": "^6.0.14",
+    "css-loader": "^0.19.x",
+    "html-loader": "^0.3.x",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0",
+    "wilddog": "^0.5.0"
+  },
+  "dependencies": {
+    "vue": "*",
+    "vue-resource": "*",
+    "vue-router": "*",
+    "firebase": "*",
+    "es6-promise": "*"
+  }
+}
