@@ -13,18 +13,18 @@ module.exports = {
         path: './build/',
         filename: "build.js"
     },
-  module: {
-    loaders: [
-      { test: /\.css$/, loader: "style!css" },
-      { test: /\.html$/, loader: "html" },
-      { test: /\.vue$/, loader: "vue" },
-      {
-        test: /\.js?$/,
-        exclude: /(node_modules)/,
-        loader: 'babel?presets[]=es2015'
-      }
-    ]
-  },
+    module: {
+      loaders: [
+        { test: /\.css$/, loader: "style!css" },
+        { test: /\.html$/, loader: "html" },
+        { test: /\.vue$/, loader: "vue" },
+        {
+          test: /\.js?$/,
+          exclude: /(node_modules)/,
+          loader: 'babel?presets[]=es2015'
+        }
+      ]
+    },
     resolve: {
         modulesDirectories: [
           'node_modules'
@@ -36,5 +36,6 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new LiveReloadPlugin()
-    ]
+    ],
+    devtool: 'source-map'
 }
