@@ -1,4 +1,5 @@
-var webpack = require('webpack')
+var webpack = require('webpack');
+var LiveReloadPlugin = require('webpack-livereload-plugin');
 module.exports = {
     entry: [
         'webpack-dev-server/client?http://0.0.0.0:9090',//资源服务器地址
@@ -9,7 +10,7 @@ module.exports = {
         //path: __dirname+'/build',
         //filename: "build.js"
         publicPath: "http://127.0.0.1:9090/build/",
-        path: './static/dist/',
+        path: './build/',
         filename: "build.js"
     },
   module: {
@@ -33,6 +34,7 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': '"development"'
         }),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new LiveReloadPlugin()
     ]
 }
