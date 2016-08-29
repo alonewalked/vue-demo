@@ -63,6 +63,15 @@ vue+firebase todolist
 
 * * *
 
+### demo 12
+
+vue+webpack-server & livereload
+
+1.  livereload
+2.  webpack-server
+
+* * *
+
 ### vue2048
 
 vue 2048
