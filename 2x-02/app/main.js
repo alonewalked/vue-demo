@@ -1,25 +1,19 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
-import Vuex from 'vuex';
 
 import Element from 'element-ui';
 
 import App from './app';
 import Home from './components/home';
 import About from './components/about';
+import List from './components/list';
+
+import store from './store';
 
 Vue
 .use(VueRouter)
-.use(VueResource)
-.use(Vuex)
 .use(Element);
-
-const store = new Vuex.Store({
-    state: {
-        data: ''
-    }
-});
 
 const router = new VueRouter({
     mode: 'history',
@@ -30,8 +24,13 @@ const router = new VueRouter({
         path: '/about',
         component: About
     },
+    {
+        path: '/list',
+        component: List
+    },
     {path: '*', redirect: '/home'}]
 });
+
 
 new Vue({
     router,
