@@ -78,3 +78,9 @@ vue 2048
 
 * * *
  
+### demo 2x-ssr-1
+
+1.  npm run dev
+
+* * *
+
